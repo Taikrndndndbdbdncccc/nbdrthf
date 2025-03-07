@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    background-color: #222;
+}
+
+/* Centered Class */
+.centered {
+    display: flex;
+    justify-content: center; /* Mengatur konten secara horizontal */
+    align-items: center; /* Mengatur konten secara vertikal */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    height: auto; /* Mengatur tinggi elemen agar sesuai dengan konten */
+}
+
+/* Well */
+.well {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel */
+.carousel-inner > .item > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button */
+.btn {
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+/* Footer */
+.foo {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+}
